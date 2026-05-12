@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=builder /build/deps /app/deps
 # Copy your application files
 COPY app.py .
-COPY global-bundle.pem .
+# COPY global-bundle.pem .
 # Ensure your index.html is copied if your app.py references it externally
 # COPY index.html .
 
