@@ -35,7 +35,7 @@ spec:
 #      serviceAccountName: rds-auth-sa
       containers:
       - name: my-pod
-        image: first-web:latest
+        image: first-web:REPLACE_ME
         ports:
         - containerPort: 80
         # AWS RDS
