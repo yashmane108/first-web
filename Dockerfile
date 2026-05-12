@@ -20,8 +20,8 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# ✅ Only here
-RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
+# while use AWS RDS IAM Authenticatio
+# RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/* 
 
 # Copy only the installed Python packages from the builder stage
 COPY --from=builder /build/deps /app/deps
